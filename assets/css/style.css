@@ -83,6 +83,8 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 .banner h2 {
@@ -176,6 +178,12 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.section-aboutus-right .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-aboutus-left {
   width: 512px;
   text-align: center;
@@ -183,6 +191,7 @@ a:hover {
 
 .section-aboutus-left img {
   width: 300px;
+  border-radius: 8px;
 }
 
 .section-aboutus-right {
@@ -194,34 +203,6 @@ a:hover {
 .section-aboutus-right p {
   font-size: 16px;
   line-height: 25px;
-}
-
-.section-map {
-  display: flex;
-}
-
-.section-map-left {
-  flex: 1;
-  padding-top: 35px;
-}
-
-.section-map-left h4 {
-  padding-bottom: 5px;
-}
-
-.section-map-left p {
-  font-size: 16px;
-  line-height: 25px;
-  padding-bottom: 10px;
-}
-
-.section-map-right {
-  width: 600px;
-  text-align: center;
-}
-
-.section-map-right img {
-  width: 480px;
 }
 
 .section-services {
@@ -266,6 +247,40 @@ a:hover {
   max-height: 500px;
   aspect-ratio: 1 / 1;
   object-fit: scale-down;
+}
+
+.section-map {
+  display: flex;
+}
+
+.section-map .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-map-left {
+  flex: 1;
+  padding-top: 50px;
+}
+
+.section-map-left h4 {
+  padding-bottom: 5px;
+}
+
+.section-map-left p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+
+.section-map-right {
+  width: 600px;
+  text-align: center;
+}
+
+.section-map-right img {
+  width: 480px;
 }
 
 footer {
@@ -338,11 +353,13 @@ footer {
 
   .banner h1 {
     font-size: 30px;
+    margin: 0;
+    padding: 0;
   }
 
   .banner h2 {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     font-size: 15px;
   }
 
@@ -411,6 +428,9 @@ footer {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+  }
+  .section-map-left {
+    padding: 15px;
   }
 
   .section-map-left a {
@@ -599,7 +619,7 @@ footer {
   }
 }
 
-/* LAPTOPS/DESKTOPS*/
+/* LAPTOPS/DESKTOPS */
 @media (min-width: 769px) and (max-width: 1279px) {
   .banner {
     height: 85vh;
@@ -652,6 +672,7 @@ footer {
   .section-aboutus-right {
     max-width: 512px;
     margin-left: 50px;
+    margin-right: 50px;
   }
 
   .section-aboutus a {
@@ -666,6 +687,7 @@ footer {
 
   .section-map-left {
     margin-top: 35px;
+    margin-left: 50px;
   }
 
   .section-map a {
